@@ -1,16 +1,18 @@
 public class Celebrity {
-    
+
+    private String name;
     private String hairColor;
     private String eyeColor;
-    private int age;
+    private String age;
     private String profession;
     private String deadOrAlive;
     private String gender;
-    private double height;
+    private String height;
     private String nationality;
     private String race;
 
-    public Celebrity(String hairColor, String eyeColor, int age, String profession, String deadOrAlive, String gender, double height, String nationality, String race){
+    public Celebrity(String name, String hairColor, String eyeColor, String age, String profession, String deadOrAlive, String gender, String height, String nationality, String race){
+        this.name = name;
         this.hairColor = hairColor;
         this.eyeColor = eyeColor;
         this.age = age;
@@ -21,31 +23,34 @@ public class Celebrity {
         this.nationality = nationality;
         this.race = race;
     }
-    public String hairColor(){
+    public String getName(){
+        return this.name;
+    }
+    public String getHairColor(){
         return this.hairColor;
     }
-    public String eyeColor (){
+    public String getEyeColor (){
         return this.eyeColor;
     }
-    public int age (){
+    public String getAge (){
         return this.age;
     }
-    public String profession (){
+    public String getProfession (){
         return this.profession;
     }
-    public String deadOrAlive(){
+    public String getDeadOrAlive(){
         return this.deadOrAlive;
     }
-    public String gender (){
+    public String getGender (){
         return this.gender;
     }
-    public double height (){
+    public String getHeight (){
         return this.height;
     }
-    public String nationality(){
+    public String getNationality(){
         return this.nationality;
     }
-    public String race(){
+    public String getRace(){
         return this.race;
     }
 }
